@@ -1,6 +1,4 @@
-Here is your complete, updated **`src/Components/3D/FeaturedShowcase.tsx`** with **DubSync AI 2.0** set as your #1 Flagship Featured Project:
 
-```tsx
 import React, { useState, useRef } from "react";
 import {
   ExternalLink,
@@ -354,4 +352,3 @@ const FeaturedShowcase: React.FC = () => {
 };
 
 export default FeaturedShowcase;
-```
