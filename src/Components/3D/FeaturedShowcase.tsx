@@ -1,3 +1,6 @@
+Here is your complete, updated **`src/Components/3D/FeaturedShowcase.tsx`** with **DubSync AI 2.0** set as your #1 Flagship Featured Project:
+
+```tsx
 import React, { useState, useRef } from "react";
 import {
   ExternalLink,
@@ -19,6 +22,22 @@ interface FeaturedProject {
 }
 
 const featuredList: FeaturedProject[] = [
+  {
+    title: "DubSync AI 2.0",
+    category: "Generative AI & Multimodal Video Dubbing",
+    tagline:
+      "Autonomous Multilingual Video Dubbing & Translation engine powered by Faster-Whisper, Edge-TTS, Gemini & Groq LLM translation, time-aligned audio synthesis & subtitle generation.",
+    image: "/dubsync.png",
+    demo: "https://dub-sync-ai-2-0.vercel.app/",
+    github: "https://github.com/shivansh4565/DubSync-AI-2.0",
+    highlights: [
+      "Faster-Whisper speech-to-text with VAD silence filtering",
+      "Context-aware multilingual translation via Gemini & Groq LLMs",
+      "Edge-TTS time-aligned multi-speaker voice synthesis",
+      "Automated FFmpeg remuxing and burnt-in subtitle generation",
+    ],
+    techStack: ["Faster-Whisper", "Edge-TTS", "FastAPI", "Next.js", "Python", "FFmpeg", "Tailwind CSS"],
+  },
   {
     title: "Intervia",
     category: "AI Audio & NLP Intelligence",
@@ -202,7 +221,7 @@ const FeaturedShowcase: React.FC = () => {
                   isLight ? "text-slate-600" : "text-zinc-400"
                 }`}
               >
-                system://showcase/{active.title.toLowerCase()}
+                system://showcase/{active.title.toLowerCase().replace(/\s+/g, "-")}
               </span>
             </div>
 
@@ -335,4 +354,4 @@ const FeaturedShowcase: React.FC = () => {
 };
 
 export default FeaturedShowcase;
-
+```
