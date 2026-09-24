@@ -175,6 +175,18 @@ const PortfolioSection: React.FC = () => {
   const isLight = theme === "light";
 
   const projects: ProjectItem[] = [
+    // 1. DubSync AI 2.0
+    {
+      image: "/dubsync.png",
+      title: "DubSync AI 2.0",
+      subtitle:
+        "Autonomous Multilingual Video Dubbing & Translation engine powered by Faster-Whisper, Edge-TTS, Gemini/Groq LLM translation, time-aligned audio synthesis & subtitle generation.",
+      demo: "https://dub-sync-ai-2-0.vercel.app/",
+      github: "https://github.com/shivansh4565/DubSync-AI-2.0",
+      tags: ["Generative AI", "Faster-Whisper", "Edge-TTS", "FastAPI", "Next.js"],
+    },
+
+    // 2. Intervia
     {
       image: "/Intervia.png",
       title: "Intervia",
@@ -184,6 +196,8 @@ const PortfolioSection: React.FC = () => {
       github: "https://github.com/shivansh4565/Intervia",
       tags: ["AI Audio & NLP", "React", "Express.js", "MongoDB", "Analytics"],
     },
+
+    // 3. SplitPay
     {
       image: "/SplitPay.png",
       title: "SplitPay",
@@ -193,6 +207,8 @@ const PortfolioSection: React.FC = () => {
       github: "https://github.com/shivansh4565/SplitPay",
       tags: ["MERN Stack", "UPI Protocol", "Node.js", "Express.js", "MongoDB"],
     },
+
+    // 4. ATSense
     {
       image: "/ATSense.png",
       title: "ATSense",
@@ -202,6 +218,8 @@ const PortfolioSection: React.FC = () => {
       github: "https://github.com/shivansh4565/ATSense",
       tags: ["Generative AI", "LLMs", "React", "Python", "REST API"],
     },
+
+    // 5. AskAKTU
     {
       image: "/AKTU.png",
       title: "AskAKTU",
@@ -211,6 +229,8 @@ const PortfolioSection: React.FC = () => {
       github: "https://github.com/shivansh4565/AskAKTU",
       tags: ["Conditional RAG", "LangGraph", "FAISS", "Groq LLM", "Streamlit"],
     },
+
+    // 6. DeepScope
     {
       image: "/DeepScope.png",
       title: "DeepScope",
@@ -284,7 +304,7 @@ const PortfolioSection: React.FC = () => {
                 isLight ? "text-slate-500" : "text-zinc-500"
               }`}
             >
-              5 Verified Builds
+              6 Verified Builds
             </span>
           </div>
 
@@ -308,5 +328,3 @@ const PortfolioSection: React.FC = () => {
 };
 
 export default PortfolioSection;
-
-
