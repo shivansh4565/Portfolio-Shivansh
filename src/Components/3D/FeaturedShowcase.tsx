@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from "react";
 import {
   ExternalLink,
@@ -20,6 +19,22 @@ interface FeaturedProject {
 }
 
 const featuredList: FeaturedProject[] = [
+  {
+    title: "VisioNex",
+    category: "Deep Learning & Computer Vision",
+    tagline:
+      "Intelligent Computer Vision & Image Classification platform powered by a custom PyTorch Convolutional Neural Network (CNN) trained on CIFAR-10 with real-time probabilistic confidence analysis.",
+    image: "/visionex.png",
+    demo: "https://visio-nex.vercel.app/",
+    github: "https://github.com/shivansh4565/VisioNex",
+    highlights: [
+      "3-Stage Convolutional Neural Network with BatchNorm & Dropout regularization",
+      "Real-time multi-class softmax inference with Top-3 ranked confidence distributions",
+      "Interactive test visualizer with 1-click sample chips & drag-and-drop ingestion",
+      "Production-grade FastAPI PyTorch backend integrated with Vite & Tailwind CSS",
+    ],
+    techStack: ["PyTorch", "Torchvision", "FastAPI", "Python", "React", "Tailwind CSS", "Vite"],
+  },
   {
     title: "DubSync AI 2.0",
     category: "Generative AI & Multimodal Video Dubbing",
