@@ -175,7 +175,18 @@ const PortfolioSection: React.FC = () => {
   const isLight = theme === "light";
 
   const projects: ProjectItem[] = [
-    // 1. DubSync AI 2.0
+    // 1. VisioNex
+    {
+      image: "/visionex.png",
+      title: "VisioNex",
+      subtitle:
+        "PyTorch-based CNN Computer Vision platform for CIFAR-10 image classification with real-time probabilistic confidence analysis and Top-3 predictions.",
+      demo: "https://visio-nex.vercel.app/",
+      github: "https://github.com/shivansh4565/VisioNex",
+      tags: ["PyTorch CNN", "Computer Vision", "FastAPI", "React", "Tailwind CSS"],
+    },
+
+    // 2. DubSync AI 2.0
     {
       image: "/dubsync.png",
       title: "DubSync AI 2.0",
@@ -186,7 +197,7 @@ const PortfolioSection: React.FC = () => {
       tags: ["Generative AI", "Faster-Whisper", "Edge-TTS", "FastAPI", "Next.js"],
     },
 
-    // 2. Intervia
+    // 3. Intervia
     {
       image: "/Intervia.png",
       title: "Intervia",
@@ -197,7 +208,7 @@ const PortfolioSection: React.FC = () => {
       tags: ["AI Audio & NLP", "React", "Express.js", "MongoDB", "Analytics"],
     },
 
-    // 3. SplitPay
+    // 4. SplitPay
     {
       image: "/SplitPay.png",
       title: "SplitPay",
@@ -208,7 +219,7 @@ const PortfolioSection: React.FC = () => {
       tags: ["MERN Stack", "UPI Protocol", "Node.js", "Express.js", "MongoDB"],
     },
 
-    // 4. ATSense
+    // 5. ATSense
     {
       image: "/ATSense.png",
       title: "ATSense",
@@ -219,7 +230,7 @@ const PortfolioSection: React.FC = () => {
       tags: ["Generative AI", "LLMs", "React", "Python", "REST API"],
     },
 
-    // 5. AskAKTU
+    // 6. AskAKTU
     {
       image: "/AKTU.png",
       title: "AskAKTU",
@@ -230,7 +241,7 @@ const PortfolioSection: React.FC = () => {
       tags: ["Conditional RAG", "LangGraph", "FAISS", "Groq LLM", "Streamlit"],
     },
 
-    // 6. DeepScope
+    // 7. DeepScope
     {
       image: "/DeepScope.png",
       title: "DeepScope",
@@ -280,7 +291,7 @@ const PortfolioSection: React.FC = () => {
             }`}
           >
             A collection of AI/ML and Full Stack projects showcasing my experience
-            in Generative AI, Agentic AI, Retrieval-Augmented Generation (RAG),
+            in Generative AI, Computer Vision, Agentic AI, Retrieval-Augmented Generation (RAG),
             and scalable web application development.
           </p>
         </div>
@@ -304,7 +315,7 @@ const PortfolioSection: React.FC = () => {
                 isLight ? "text-slate-500" : "text-zinc-500"
               }`}
             >
-              6 Verified Builds
+              7 Verified Builds
             </span>
           </div>
 
